@@ -1,0 +1,112 @@
+#body{
+    background-color: #CAD593;   
+}
+#title{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    align-items: center;
+    font-family: 'Old Standard TT';
+    background-color: #CAD593;
+}
+button{
+    align-items: center;
+  appearance: none;
+  background-color: #A1C349;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#A1C349 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  width: 120px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+h1{
+    text-align:center ;
+    font-size : 5em;
+    font-family: 'Jua', sans-serif;
+}
+
+h2{
+    font-family: 'Jua';
+    font-size: 2em;
+}
+
+p{
+    font-family: 'Old Standard TT';
+   
+}
+
+img{
+    justify-self: center;
+}
+
+#contact{
+    justify-self: end;
+    margin-right: 25%;
+    margin-top: 20%;
+  
+}
+
+#signin{
+    justify-self: baseline;
+    margin-top: 20%;
+    margin-left: 25%;
+}
+
+#description{
+    margin-left: 10%;
+}
+#icons{
+    margin-left: 10px;
+    margin-right: 10px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    padding-top: 3em;
+}
+#gst{
+    text-align: center;
+    padding: 6em 0;
+}
+#gst h1{
+    font-size : 1.5em;
+}
+#gst button{
+    width: 150px;
+}
+#social{
+    padding-top: 6em;
+    text-align: center;
+}
+#icons img{
+    padding: 0 5em;
+}
+#social img{
+    justify-content: space-between;
+    width: calc(25- 30px);
+}
+.facebook {
+    width: 50px; /* Set the width of the displayed sprite image */
+    height: 50px; /* Set the height of the displayed sprite image */
+    background-image: url('./social.jpg'); /* Set the path to your sprite sheet */
+    background-position: -100px -150px; /* Adjust the position to show the desired image from the sprite sheet */
+}

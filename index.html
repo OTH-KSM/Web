@@ -3,82 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>LEETROOMIE</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jua&family=Old+Standard+TT&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
-    <style>
-        #title{
-            display: grid;
-            grid-template-columns: 33% 33% 33%;
-            align-items: center;
-            font-family: 'Old Standard TT';
-        }
-        #contact{
-            justify-self: end;
-            margin-right: 25%;
-            margin-top: 20%;
-        }
-        #signin{
-            margin-top: 20%;
-            margin-left: 25%;
-        }
-        img{
-            justify-self: center;
-
-
-        }
-        h1{
-            text-align:center ;
-            font-size : 5em;
-            font-family: 'Jua', sans-serif;
-        }
-        #description{
-            margin-left: 10%;
-        }
-        #icons{
-            display: grid;
-            grid-template-columns: repeat(5,1fr);
-            padding-top: 3em;
-        }
-        #gst{
-            text-align: center;
-            padding: 6em 0;
-        }
-        #gst h1{
-            font-size : 1.5em;
-        }
-        #social{
-            padding: 6em;
-            text-align: center;
-        }
-        #icons img{
-            padding: 0 5em;
-        }
-        h2{
-            font-family: 'Jua';
-            font-size: 2em;
-        }
-        p{
-            font-family: 'Old Standard TT';
-            font-size: .5em;           
-        }
-        .facebook {
-            width: 50px; /* Set the width of the displayed sprite image */
-            height: 50px; /* Set the height of the displayed sprite image */
-            background-image: url('./social.jpg'); /* Set the path to your sprite sheet */
-            background-position: -100px -150px; /* Adjust the position to show the desired image from the sprite sheet */
-        }
-
-
-    </style>
 </head>
-<body>
+<style></style></styl>
+<body id="body">    
     <section id="title">
-        <h4 id="signin">Sign In</h4>
-        <img src="./home.png" height="50px" width="50px">
-        <h4 id="contact">Contact</h4>
+        <button id="signin">Sign In</button>
+        <img src="./main_logo/home.png" height="50px" width="50px">
+        <button id="contact">Contact Us</button>
     </section>
     <h1>LEETROOMIE</h1>
     <section id="description">
@@ -88,26 +25,33 @@
             as LeetRoomie connects you to your future comfy abodes<br> and eccentric cohabitants!</p>
     </section>
     <section id="icons">
-        <img src="./9lb.png" height="50px" width="50px">
-        <img src="./9lb.png" height="50px" width="50px">
-        <img src="./9lb.png" height="50px" width="50px">
-        <img src="./9lb.png" height="50px" width="50px">
-        <img src="./9lb.png" height="50px" width="50px">
+        <img src="./imojis/9lb.png" height="50px" width="50px">
+        <img src="./imojis/ETOILE.png" height="50px" width="50px">
+        <img src="./imojis/FLECH.png" height="50px" width="50px">
+        <img src="./imojis/POINTS.png" height="50px" width="50px">
+        <img src="./imojis/TKHARBI9A.png" height="50px" width="50px">
 
     </section>
     <section id="gst">
-        <img src="./9lb.png" height="75px" width="75px">
+        <img src="./imojis/9lb.png" height="75px" width="75px">
         <h1>Ready to find your roomie soulmate?</h1>
         <button>Get Started</button>
     </section>
     <section id="social">
-       <img src="./facebook.png" height="30px" width="30px">
-       <img src="./linkedin.png" height="30px" width="30px">
-       <img src="./telegram.png" height="30px" width="30px">
-       <img src="./insta.png" height="30px" width="30px">
-       <img src="./youtube.png" height="30px" width="30px">
-       <img src="./twitter.png" height="30px" width="30px">
+       <img src="./social_media/linkedin.png" height="40px" width="40px">
+       <img src="./social_media/youtube.png" height="40px" width="40px">
+       <img src="./social_media/twitter.png" height="40px" width="40px">
+        <h5>© 2023 LeetRoomie. Don't even think about copying us!</h5>
     </section>
-
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          var scrollButton = document.getElementById("Contact");
+          var targetSection = document.getElementById("social");
+        
+          scrollButton.addEventListener("click", function() {
+            targetSection.scrollIntoView({ behavior: "smooth" });
+          });
+        });
+    </script>
 </body>
 </html>
