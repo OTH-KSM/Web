@@ -1,12 +1,13 @@
 #body{
-    background-color: #CAD593;   
+    background-color: #283739;
+    margin: 0%;  
 }
 #title{
     display: grid;
     grid-template-columns: 33% 33% 33%;
     align-items: center;
     font-family: 'Old Standard TT';
-    background-color: #CAD593;
+    background-color: #283739;
 }
 button{
     align-items: center;
@@ -51,9 +52,11 @@ h2{
     font-size: 2em;
 }
 
+h5{
+    font-family: 'Jua';
+}
 p{
     font-family: 'Old Standard TT';
-   
 }
 
 img{
@@ -80,7 +83,7 @@ img{
     margin-left: 10px;
     margin-right: 10px;
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(4,1fr);
     padding-top: 3em;
 }
 #gst{
@@ -99,6 +102,7 @@ img{
 }
 #icons img{
     padding: 0 5em;
+    margin-top: 20%;
 }
 #social img{
     justify-content: space-between;
